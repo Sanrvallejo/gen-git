@@ -10,39 +10,39 @@ if (num1 === num2 && num2 === num3) {
     console.log("Todos los números son iguales: " + num1, num2, num3);
 } else {
     // identificar numeros
-    let max, mid, menor;
+    let max, mid, min;
 
     if (num1 >= num2 && num1 >= num3) {
         max = num1;
         if (num2 >= num3) {
             mid = num2;
-            menor = num3;
+            min = num3;
         } else {
             mid = num3;
-            menor = num2;
+            min = num2;
         }
     } else if (num2 >= num1 && num2 >= num3) {
         max = num2;
         if (num1 >= num3) {
             mid = num1;
-            menor = num3;
+            min = num3;
         } else {
             mid = num3;
-            menor = num1;
+            min = num1;
         }
     } else {
         max = num3;
         if (num1 >= num2) {
             mid = num1;
-            menor = num2;
+            min = num2;
         } else {
             mid = num2;
-            menor = num1;
+            min = num1;
         }
     }
 
-    console.log(max, mid, menor);
-    console.log(menor, mid, max);
+    console.log(max, mid, min);
+    console.log(min, mid, max);
 }
 
 
